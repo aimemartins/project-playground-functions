@@ -14,21 +14,16 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-let frase = 'vamo que vamo';
-let arrayFrase = [];
+// Pesquisa realizada na página https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
 function splitSentence(frase) {
-  for (index = 0; index < frase.length; index += 1) {
-    if (frase[index] === '') {
-      arrayFrase.push(', ');
-    } else {
-      arrayFrase.push(frase[index]);
-    }
-  }
+  let separador = " ";
+  let arrayFrase = frase.split(separador);
   return arrayFrase;
 }
-console.log(splitSentence(frase));
 
 // Desafio 4
+
 function concatName() {
   // seu código aqui
 }
