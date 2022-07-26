@@ -1,7 +1,3 @@
-let ketchup = true;
-let maionese = true;
-let mostarda = false;
-
 // Desafio 1
 function compareTrue(ketchup, maionese) {
   if (ketchup === true && maionese === true) {
@@ -10,8 +6,7 @@ function compareTrue(ketchup, maionese) {
     return false;
   }
 }
-console.log(compareTrue(ketchup, mostarda)); // false
-console.log(compareTrue(ketchup, maionese)); // true
+
 // Desafio 2
 
 function calcArea(base, height) {
@@ -19,9 +14,19 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+let frase = 'vamo que vamo';
+let arrayFrase = [];
+function splitSentence(frase) {
+  for (index = 0; index < frase.length; index += 1) {
+    if (frase[index] === '') {
+      arrayFrase.push(', ');
+    } else {
+      arrayFrase.push(frase[index]);
+    }
+  }
+  return arrayFrase;
 }
+console.log(splitSentence(frase));
 
 // Desafio 4
 function concatName() {
