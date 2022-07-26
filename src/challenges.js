@@ -1,8 +1,17 @@
-// Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
+let ketchup = true;
+let maionese = true;
+let mostarda = false;
 
+// Desafio 1
+function compareTrue(ketchup, maionese) {
+  if (ketchup === true && maionese === true) {
+    return true;
+  } else {
+  return false;
+  }
+}
+console.log(compareTrue(ketchup, mostarda)); // false
+console.log(compareTrue(ketchup, maionese)); // true
 // Desafio 2
 function calcArea() {
   // seu código aqui
