@@ -7,14 +7,15 @@ function compareTrue(ketchup, maionese) {
   if (ketchup === true && maionese === true) {
     return true;
   } else {
-  return false;
+    return false;
   }
 }
 console.log(compareTrue(ketchup, mostarda)); // false
 console.log(compareTrue(ketchup, maionese)); // true
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+
+function calcArea(base, height) {
+  return (base * height) / 2;
 }
 
 // Desafio 3
