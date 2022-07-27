@@ -74,19 +74,19 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(num) {
   let arrayNum = [];
   for (let i = 0; i < num.length; i += 1) {
-    if (num[i] % 3 == 0 && num[i] % 5 != 0) {
+    if (num[i] % 3 === 0 && num[i] % 5 !== 0) {
       arrayNum.push('fizz');
-    } if (num[i] % 5 == 0 && num[i] % 3 != 0) {
+    } if (num[i] % 5 === 0 && num[i] % 3 !== 0) {
       arrayNum.push('buzz');
-    } if (num[i] % 5 == 0 && num[i] % 3 == 0) {
+    } if (num[i] % 5 === 0 && num[i] % 3 === 0) {
       arrayNum.push('fizzBuzz');
-    } if (num[i] % 5 != 0 && num[i] % 3 != 0) {
+    } if (num[i] % 5 !== 0 && num[i] % 3 !== 0) {
       arrayNum.push('bug!');
-    }
-  }
-  return arrayNum
+    };
+  };
+  return arrayNum;
 }
-console.log(fizzBuzz([3, 5, 45, 2]));
+
 // Desafio 9
 function encode() {
   // seu código aqui
