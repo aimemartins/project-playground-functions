@@ -82,8 +82,8 @@ function fizzBuzz(num) {
       arrayNum.push('fizzBuzz');
     } if (num[i] % 5 !== 0 && num[i] % 3 !== 0) {
       arrayNum.push('bug!');
-    };
-  };
+    }
+  }
   return arrayNum;
 }
 
@@ -131,10 +131,20 @@ function decode(text2) {
 console.log(encode(text));
 console.log(decode(text2));
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arrayTech, name) {
+  let objeto = {};
+  let arrayDeObjetos = [];
+  for (let i = 0; i < arrayTech.length; i += 1) {
+    objeto.tech = arrayTech[i];
+    objeto.name = name;
+  }
+  arrayDeObjetos.push(objeto);
+  if (arrayTech.length === 0) {
+    return 'Vazio!';
+  }
+  return arrayDeObjetos;
 }
-
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 module.exports = {
   calcArea,
   catAndMouse,
