@@ -88,7 +88,7 @@ function fizzBuzz(num) {
 }
 
 // Desafio 9
-let text = 'hello';
+let text = 'How are you today?';
 function encode(text) {
   let textEncode = [];
   for (let i = 0; i < text.length; i += 1) {
@@ -108,7 +108,7 @@ function encode(text) {
   }
   return textEncode.join('');
 }
-let text2 = 'Th3s 3s 1n 2nc4d3ng t2st';
+let text2 = 'H4w 1r2 y45 t4d1y?';
 function decode(text2) {
   let textDecode = [];
   for (let i = 0; i < text2.length; i += 1) {
@@ -128,8 +128,8 @@ function decode(text2) {
   }
   return textDecode.join('');
 }
-console.log(encode('hello'));
-console.log(decode('Th3s 3s 1n 2nc4d3ng t2st'));
+console.log(encode(text));
+console.log(decode(text2));
 // Desafio 10
 function techList() {
   // seu código aqui
