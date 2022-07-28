@@ -137,14 +137,15 @@ function techList(arrayTech, name) {
   for (let i = 0; i < arrayTech.length; i += 1) {
     objeto.tech = arrayTech[i];
     objeto.name = name;
+    arrayDeObjetos.push(objeto);
   }
-  arrayDeObjetos.push(objeto);
   if (arrayTech.length === 0) {
     return 'Vazio!';
   }
   return arrayDeObjetos;
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+
 module.exports = {
   calcArea,
   catAndMouse,
