@@ -88,13 +88,48 @@ function fizzBuzz(num) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+let text = 'hello';
+function encode(text) {
+  let textEncode = [];
+  for (let i = 0; i < text.length; i += 1) {
+    if (text[i] === 'a') {
+      textEncode.push(1);
+    } if (text[i] === 'e') {
+      textEncode.push(2);
+    } if (text[i] === 'i') {
+      textEncode.push(3);
+    } if (text[i] === 'o') {
+      textEncode.push(4);
+    } if (text[i] === 'u') {
+      textEncode.push(5);
+    } if (text[i] !== 'a' && text[i] !== 'e' && text[i] !== 'i' && text[i] !== 'o' && text[i] !== 'u') {
+      textEncode.push(text[i]);
+    }
+  }
+  return textEncode.join('');
 }
-function decode() {
-  // seu código aqui
+let text2 = 'Th3s 3s 1n 2nc4d3ng t2st';
+function decode(text2) {
+  let textDecode = [];
+  for (let i = 0; i < text2.length; i += 1) {
+    if (text2[i] === '1') {
+      textDecode.push('a');
+    } if (text2[i] === '2') {
+      textDecode.push('e');
+    } if (text2[i] === '3') {
+      textDecode.push('i');
+    } if (text2[i] === '4') {
+      textDecode.push('o');
+    } if (text2[i] === '5') {
+      textDecode.push('u');
+    } if (text2[i] !== '1' && text2[i] !== '2' && text2[i] !== '3' && text2[i] !== '4' && text[i] !== '5') {
+      textDecode.push(text2[i]);
+    }
+  }
+  return textDecode.join('');
 }
-
+console.log(encode('hello'));
+console.log(decode('Th3s 3s 1n 2nc4d3ng t2st'));
 // Desafio 10
 function techList() {
   // seu código aqui
