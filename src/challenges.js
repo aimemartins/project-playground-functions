@@ -88,7 +88,6 @@ function fizzBuzz(num) {
 }
 
 // Desafio 9
-let text = 'How are you today?';
 function encode(text) {
   let textEncode = [];
   for (let i = 0; i < text.length; i += 1) {
@@ -102,13 +101,16 @@ function encode(text) {
       textEncode.push(4);
     } if (text[i] === 'u') {
       textEncode.push(5);
-    } if (text[i] !== 'a' && text[i] !== 'e' && text[i] !== 'i' && text[i] !== 'o' && text[i] !== 'u') {
+    } if (text[i] !== 'a' && 
+    text[i] !== 'e' && 
+    text[i] !== 'i' && 
+    text[i] !== 'o' && 
+    text[i] !== 'u') {
       textEncode.push(text[i]);
     }
   }
   return textEncode.join('');
 }
-let text2 = 'H4w 1r2 y45 t4d1y?';
 function decode(text2) {
   let textDecode = [];
   for (let i = 0; i < text2.length; i += 1) {
@@ -122,14 +124,16 @@ function decode(text2) {
       textDecode.push('o');
     } if (text2[i] === '5') {
       textDecode.push('u');
-    } if (text2[i] !== '1' && text2[i] !== '2' && text2[i] !== '3' && text2[i] !== '4' && text[i] !== '5') {
+    } if (text2[i] !== '1' && 
+    text2[i] !== '2' && 
+    text2[i] !== '3' && 
+    text2[i] !== '4' && 
+    text2[i] !== '5') {
       textDecode.push(text2[i]);
     }
   }
   return textDecode.join('');
 }
-console.log(encode(text));
-console.log(decode(text2));
 // Desafio 10
 function techList(arrayTech, name) {
   let arrayDeObjetos = [];
@@ -141,7 +145,6 @@ function techList(arrayTech, name) {
   }
   return arrayDeObjetos;
 }
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,
