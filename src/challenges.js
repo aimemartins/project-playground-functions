@@ -132,12 +132,9 @@ console.log(encode(text));
 console.log(decode(text2));
 // Desafio 10
 function techList(arrayTech, name) {
-  let objeto = {};
   let arrayDeObjetos = [];
   for (let i = 0; i < arrayTech.length; i += 1) {
-    objeto.tech = arrayTech[i];
-    objeto.name = name;
-    arrayDeObjetos.push(objeto);
+    arrayDeObjetos.push({ tech: arrayTech.sort()[i], name: name });
   }
   if (arrayTech.length === 0) {
     return 'Vazio!';
